@@ -39,6 +39,25 @@ img{
     padding-right: 15px;
     margin: 0 auto;
 }
+.btn{
+    width: 200px;
+    height: 50px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--txt-color);
+    border-radius: 4px;
+    background-color: var(--accent-txt-cl);
+    border: none;
+    cursor: pointer;
+    transition: background-color var(--animation), box-shadow var(--animation);   
+}
+.btn:hover,
+.btn:focus {
+    background-color: #188CE8;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.15);
+}
 /*Header section*/
 .header {
     background-color: var(--light-bg-cl);
@@ -144,39 +163,23 @@ img{
 }
 
 .main-title{
+    font-size: 44px;
     font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36em;
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: var(--txt-color);
-        width: 696px;
-        margin: auto;
-        margin-bottom: 30px;
-           
+    line-height: 1.36em;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--txt-color);
+    width: 696px;
+    margin: auto;
+    margin-bottom: 30px;               
 }
 
-.btn{
-    padding: 10px 32px;
-    border-radius: 4px;
-    font-weight: 700;
-        font-size: 16px;
-        line-height: 1.875em ;
-        color: var(--txt-color);
-        letter-spacing: 0.06em;
-        background-color:var(--accent-txt-cl);
-        cursor: pointer;
-        font-family: inherit;
-        border: none;
-        display: block;
-        margin: 0 auto;
-        transition: background-color var(--animation);
-}
-
-.btn:hover,
-.btn:focus{
-background-color:#188CE8;
+.btn-main{
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
 }
 /*Features*/
 .features.section {
@@ -472,42 +475,37 @@ justify-content: center;
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.footer .container {
+.footer__container {
     display: flex;
     align-items: baseline;
 }
-.adress-links {
+.footer__contacts {
     margin-right: 50px;
 }
-
-.footer .footer-logo{
+.footer__logo {
     display: block;
     margin-bottom: 20px;
-}
-.footer-logo {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19em;
     color: var(--txt-color);
     font-family: 'Raleway';
 }
-.footet-contacts{
+.footer__address{
     margin: auto;
-
 }
-.address-list .footer-item:not(:last-child){
+.footer__item:not(:last-child){
     display: block;
     margin-bottom: 9px;  
 }
-.address-txt {
+.footer__txt {
     font-size: 14px;
     line-height: 1.71em;
     letter-spacing: 0.03em;
     color: var(--txt-color);
     font-style: normal;
-
 }
-.footer-communication {
+.footer__link {
     font-size: 14px;
     line-height: 1.71em;
     letter-spacing: 0.03em;
@@ -515,12 +513,12 @@ justify-content: center;
     font-style: normal;
     transition: color var(--animation);
 }
-
-.footer-communication:hover,
-.footer-communication:focus {
+.footer__link:hover,
+.footer__link:focus {
     color: var(--txt-color);
 }
-.icons-header, .subscribe-header{
+/*Footer-socials*/
+.socials__header {
     font-weight: 700;
     line-height: 16px;
     letter-spacing: 0.03em;
@@ -528,18 +526,12 @@ justify-content: center;
     color: var(--light-bg-cl);
     font-size: 14px;
 }
-.footer-list {
+.socials__list {
     display: flex;
     gap: 10px;
     margin-top: 20px;
 }
-
-.footer-icons {
-    fill: #FFFFFF;
-    width: 20px;
-    height: 20px;
-}
-.footer-soclink{
+.socials__link{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -548,25 +540,37 @@ justify-content: center;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     transition: background-color var(--animation);
-
 }
-.footer-soclink:hover,
-.footer-soclink:focus {
+.socials__link:hover,
+.socials__link:focus {
     background-color: var(--accent-txt-cl);
 }
-
-/*Footer-form*/
-.subscribe-wrap{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.socials__icons {
+    fill: #FFFFFF;
+    width: 20px;
+    height: 20px;
 }
-.subscribe-form{
+/*Footer-form*/
+.form-subscribe {
     display: flex;
     flex-direction: column;
     margin-left: auto;
 }
-.subscribe-input{
+.form-subscribe__header{
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--light-bg-cl);
+    font-size: 14px;
+    line-height: 16px;
+}
+.form-subscribe__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.form-subscribe__input{
     width: 358px;
     border-radius: 4px;
     padding: 15px 16px;
@@ -579,32 +583,15 @@ justify-content: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    width:200px;
-    height:50px;
     padding: 10px 28px;
     margin-left: 12px;
-    background-color: var(--accent-txt-cl);
-    border-radius: 4px;
-    cursor: pointer;
-    border: none;
-    box-shadow: 0px, 4px rgba(0, 0, 0, 0.15);
-    transition: background-color var(--animation);
 }
-.subscribe-btn:hover, .subscribe-btn:focus{
-    background-color:#188CE8 ;
-}
+
 .subscribe-icon{
     margin-left: 10px;
     width: 24px;
     height: 24px;
     fill: var(--light-bg-cl);
-}
-.subscribe-txt {
-    color: #FFFFFF;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0.06em;
-    font-weight: 700;
 }
 .subscribe-header{
     margin-bottom: 20px;
@@ -821,22 +808,7 @@ background-color: var(--accent-txt-cl);
     display: inline-flex;
     align-items: center;
     padding: 10px 52px;
-    font-size: 16px; 
-    line-height: 30px; 
-    letter-spacing: 0.06em;
-    font-weight: 700;
-    background-color: #2196F3;
-    color: var(--txt-color);
-    border-radius: 4px;
-    cursor: pointer;
-    border: none;
-    transition: box-shadow var(--animation), background-color var(--animation);
-}
-
-.register-form-btn:hover,
-.register-form-btn:focus{
-    box-shadow: 0px, 4px rgba(0, 0, 0, 0.15); 
-    background-color: #188CE8;
+    
 }
 .register-form-input:focus, .register-form-message:focus{
     border-color: var(--accent-txt-cl);
