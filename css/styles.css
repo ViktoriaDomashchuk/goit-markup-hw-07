@@ -579,23 +579,20 @@ justify-content: center;
     box-shadow: 0px, 4px rgba(0, 0, 0, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
-.subscribe-btn{
+.form-subscribe__btn{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 28px;
     margin-left: 12px;
 }
-
-.subscribe-icon{
+.form-subscribe__icon{
     margin-left: 10px;
     width: 24px;
     height: 24px;
     fill: var(--light-bg-cl);
 }
-.subscribe-header{
-    margin-bottom: 20px;
-}
+
 /*Socials*/
 .socials.list{
 display: flex;
