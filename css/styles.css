@@ -205,7 +205,7 @@ img{
 
 
 /*Features*/
-.features__container{
+.features{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -255,7 +255,7 @@ img{
 
 
 /*What we do*/
-.skill__container{
+.skill{
     padding-top: 0;
     padding-bottom: 94px;
 }
@@ -287,10 +287,10 @@ img{
 
 
 /*Our team*/
-.team__container{
+.team{
     background-color: #F5F4FA;
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 94px; 
 }
 .team__list{
     display: flex;
@@ -319,9 +319,40 @@ padding: 30px 10px;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-txt-cl);
+    margin-bottom: 16px;
+}
+
+/*Socials*/
+.soclinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+}
+.soclinks__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--light-bg-cl);
+    border-radius: 50%;
+    transition: background-color var(--animation);
+}
+.soclinks__link:hover,
+.soclinks__link:focus {
+    background-color: var(--accent-txt-cl);
+}
+.soclinks__icons {
+    fill: #AFB1B8;
+    transition: fill var(--animation);
+}
+.soclinks__link:hover .soclinks__icons,
+.soclinks__link:focus .soclinks__icons {
+    fill: var(--light-bg-cl);
 }
 /*Our clients*/
-.clients__container{
+.clients{
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -356,14 +387,11 @@ padding: 30px 10px;
 }
 
 
-
 /*PORTFOLIO*/
-.section{
+.filters{
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
-
 /*Filters*/
 .filters__list{
     display: flex;
@@ -585,36 +613,7 @@ padding: 30px 10px;
     fill: var(--light-bg-cl);
 }
 
-/*Socials*/
-.socials.list{
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 10px;
-margin-top: 16px;
-}
-.socials-link{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    background-color: var(--light-bg-cl);
-    border-radius: 50%;
-    transition: background-color var(--animation);
-}
-.socials-icons{
-    fill: #AFB1B8;
-    transition: fill var(--animation);
-}
-.socials-link:hover,
-.socials-link:focus{
-background-color: var(--accent-txt-cl);
-}
-.socials-link:hover .socials-icons,
-.socials-link:focus .socials-icons {
-    fill: var(--light-bg-cl);
-}
+
 
 /*Modal window*/
 .backdrop {
