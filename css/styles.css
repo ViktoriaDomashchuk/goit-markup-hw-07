@@ -77,7 +77,7 @@ img{
     font-weight: 700;
     color: #000000;
 }
-.logo{
+.logo-accent{
     color: var(--accent-txt-cl);
 }
 .nav{
