@@ -707,7 +707,7 @@ padding: 30px 10px;
     line-height: 14px;
     letter-spacing: 1%;
 }
-.register-form-input {
+.modal__input {
     width: 100%;
     padding: 10px;
     padding-left: 50px;
@@ -716,7 +716,7 @@ padding: 30px 10px;
     outline: transparent;
     transition: border-color var(--animation);
 }
-.register-form-message {
+.modal__message{
     padding: 12px 16px;
     height: 120px;
     resize: none;
@@ -734,23 +734,20 @@ padding: 30px 10px;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
 }
-.register-form-icon {
+.modal__box {
     position: absolute;
     bottom: 11px;
     left: 15px;
     transition: fill var(--animation);
 }
-
-
-.register-form-agreement {
+.modal__agreement {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
 }
-
-.register-form-input-check{
+.modal__check{
     position: absolute;
     width: 1px;
     height: 1px;
@@ -758,7 +755,7 @@ padding: 30px 10px;
     overflow: hidden;
     margin: -1px;        
 }
-.register-check-icon{
+.modal__checkbox{
     width: 16px;
     height: 15px;
     background-image:url(../images/icons/icon-border.svg);
@@ -767,14 +764,13 @@ padding: 30px 10px;
     margin-right: 8px;
     transition:background-image var(--animation) ;
 }
-.register-form-input-check:checked:focus + .register-check-icon{
+.modal__check:checked:focus + .modal__checkbox{
     background-image:url(../images/icons/icon-check.svg);
 }
-.register-form-input-check:focus + .register-check-icon {
+.modal__check:focus + .modal__checkbox {
     border: 2px solid var(--accent-txt-cl);
 }
-
-.register-form-agreement-text {
+.modal__text {
     font-size: 14px;
     user-select: none;
     text-underline-position: under;
@@ -782,34 +778,31 @@ padding: 30px 10px;
     letter-spacing: 0.03em;
     color: var(--secondary-txt-cl);
 }
-.register-form-agreement-link{
+.modal__link{
     color: var(--accent-txt-cl);
 }
-
-.register-form-btn {
+.modal__button {
     display: inline-flex;
     align-items: center;
     padding: 10px 52px;
-    
 }
-.register-form-input:focus, .register-form-message:focus{
+.modal__input:focus, .modal__message:focus{
     border-color: var(--accent-txt-cl);
 }
-.register-form-input:focus+.register-form-label,.register-form-input:not(:placeholder-shown)+.register-form-label{
+.modal__input:focus+.modal__label,.modal__input:not(:placeholder-shown)+.modal__label{
     transform: translate(-30px, -30px);
     color: var(--accent-txt-cl);
 }
-
-.register-form-input:focus~.register-form-icon,.register-form-input:not(:placeholder-shown)~.register-form-icon{
+.modal__input:focus~.modal__box,.modal__input:not(:placeholder-shown)~.modal__box{
     fill: var(--accent-txt-cl);
 }
-.register-form-input:not(:focus)~.register-form-icon{
+.modal__input:not(:focus)~.modal__box{
     fill: currentColor;
 }
-.register-form-input:placeholder-shown+.register-form-icon{
+.modal__input:placeholder-shown+.modal__box{
     border-color: var(--accent-txt-cl);
 }
-.register-form-message:focus+.comment,.register-form-message:not(:placeholder-shown)+.comment{
+.modal__message:focus+.comment,.modal__message:not(:placeholder-shown)+.comment{
     transform: translate(-20px, -30px);
     color: var(--accent-txt-cl);
 }
