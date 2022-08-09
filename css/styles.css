@@ -351,6 +351,8 @@ padding: 30px 10px;
 .soclinks__link:focus .soclinks__icons {
     fill: var(--light-bg-cl);
 }
+
+
 /*Our clients*/
 .clients{
     padding-top: 94px;
@@ -392,6 +394,7 @@ padding: 30px 10px;
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 /*Filters*/
 .filters__list{
     display: flex;
@@ -489,7 +492,7 @@ padding: 30px 10px;
 
 
 
-/*footer*/
+/*Footer*/
 .footer {
     background-color: var(--dark-bg-cl);
     padding-top: 60px;
@@ -645,7 +648,6 @@ padding: 30px 10px;
     transition: transform 400ms ease-in-out 200ms, opacity 400ms ease-in-out 200ms;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
-
 .backdrop.is-hidden .modal {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.3) rotate(0.5turn);
@@ -764,12 +766,6 @@ padding: 30px 10px;
     margin-right: 8px;
     transition:background-image var(--animation) ;
 }
-.modal__check:checked:focus + .modal__checkbox{
-    background-image:url(../images/icons/icon-check.svg);
-}
-.modal__check:focus + .modal__checkbox {
-    border: 2px solid var(--accent-txt-cl);
-}
 .modal__text {
     font-size: 14px;
     user-select: none;
@@ -786,15 +782,22 @@ padding: 30px 10px;
     align-items: center;
     padding: 10px 52px;
 }
+.modal__check:checked:focus+.modal__checkbox {
+    background-image: url(../images/icons/icon-check.svg);
+}
+.modal__check:focus+.modal__checkbox {
+    border: 2px solid var(--accent-txt-cl);
+}
 .modal__input:focus, .modal__message:focus{
     border-color: var(--accent-txt-cl);
 }
-.modal__input:focus+.modal__label,.modal__input:not(:placeholder-shown)+.modal__label{
+.modal__input:focus+.modal__label{
     transform: translate(-30px, -30px);
     color: var(--accent-txt-cl);
 }
-.modal__input:focus~.modal__box,.modal__input:not(:placeholder-shown)~.modal__box{
-    fill: var(--accent-txt-cl);
+.modal__input:not(:placeholder-shown)+.modal__label{
+    transform: translate(-30px, -30px);
+    color: var(--accent-txt-cl);
 }
 .modal__input:not(:focus)~.modal__box{
     fill: currentColor;
@@ -802,7 +805,11 @@ padding: 30px 10px;
 .modal__input:placeholder-shown+.modal__box{
     border-color: var(--accent-txt-cl);
 }
-.modal__message:focus+.comment,.modal__message:not(:placeholder-shown)+.comment{
+.modal__message:focus+.comment{
+    transform: translate(-20px, -30px);
+    color: var(--accent-txt-cl);
+}
+.modal__message:not(:placeholder-shown)+.comment{
     transform: translate(-20px, -30px);
     color: var(--accent-txt-cl);
 }
