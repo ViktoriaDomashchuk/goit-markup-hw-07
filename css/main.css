@@ -1,1 +1,102 @@
-/*# sourceMappingURL=main.css.map */
+/*utils styles*/
+:root {
+  /*text colors*/
+  --secondary-txt-cl: #757575;
+  --accent-txt-cl: #2196F3;
+  --txt-color: #FFFFFF;
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --main-txt-cl: #212121;
+  /*background colors*/
+  --dark-bg-cl: #2F303A;
+  --light-bg-cl: #FFFFFF;
+  /*others*/
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*base styles*/
+body {
+  color: var(--main-txt-cl);
+  font-family: "Roboto", sans-serif;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list {
+  list-style: none;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+/*components styles*/
+.btn {
+  width: 200px;
+  height: 50px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--txt-color);
+  border-radius: 4px;
+  background-color: var(--accent-txt-cl);
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background-color var(--animation), -webkit-box-shadow var(--animation);
+  transition: background-color var(--animation), -webkit-box-shadow var(--animation);
+  transition: background-color var(--animation), box-shadow var(--animation);
+  transition: background-color var(--animation), box-shadow var(--animation), -webkit-box-shadow var(--animation);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #188CE8;
+  -webkit-box-shadow: 0px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+/*layout styles*//*# sourceMappingURL=main.css.map */
