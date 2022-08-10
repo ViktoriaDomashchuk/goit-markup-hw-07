@@ -399,8 +399,6 @@ padding: 30px 10px;
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
-/*Filters*/
 .filters__list{
     display: flex;
     justify-content: center;
@@ -436,8 +434,10 @@ padding: 30px 10px;
 /*Projects*/
 .projects{
     display: flex;
+    margin: 0 auto;
     flex-wrap: wrap;
     gap: 30px;
+    width: 1170px;
 }
 .projects__item{
     width: 370px;
@@ -494,7 +494,6 @@ padding: 30px 10px;
     letter-spacing: 0.03em;
     color: var(--secondary-txt-cl);
 }
-
 
 
 /*Footer
