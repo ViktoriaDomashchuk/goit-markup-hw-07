@@ -1,6 +1,7 @@
 /*utils styles*/
 @import './utils/vars';
 @import'./utils/visually-hidden';
+@import'./utils/placeholder';
 
 /*base styles*/
 @import './base/base';
@@ -8,8 +9,15 @@
 
 /*components styles*/
 @import './components/button';
-@import'./components/container';
 @import'./components/title';
+@import'./components/logotype';
 
 /*layout styles*/
 @import './layout/header';
+@import './layout/navigation';
+@import './layout/main';
+@import './layout/features';
+@import './layout/skill';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';

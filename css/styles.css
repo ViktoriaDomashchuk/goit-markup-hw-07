@@ -84,7 +84,7 @@ img{
     box-shadow: 0px 4px rgba(0, 0, 0, 0.15);
 }*/
 
-/*Header section*/
+/*Header section
 .header {
     background-color: var(--light-bg-cl);
 }
@@ -105,7 +105,9 @@ img{
 }
 .logo-accent{
     color: var(--accent-txt-cl);
-}
+}*/
+
+/*Nav
 .nav{
     display: flex;
 }
@@ -171,10 +173,10 @@ img{
 .nav__icon{
     fill: currentColor;
     margin-right: 10px;
-}
+}*/
 
 
-/*Main section*/
+/*Main section
 .main__container{
     padding: 200px 0;
     margin-left: auto;
@@ -204,10 +206,10 @@ img{
     padding-top: 10px;
     padding-bottom: 10px;
     margin: 0 auto;
-}
+}*/
 
 
-/*Features*/
+/*Features
 .features{
     display: flex;
     align-items: center;
@@ -254,10 +256,10 @@ img{
     line-height: 1.71em ;
     letter-spacing: 0.03em;
     color: var(--secondary-txt-cl);
-}
+}*/
 
 
-/*What we do*/
+/*What we do
 .skill{
     padding-top: 0;
     padding-bottom: 94px;
@@ -286,10 +288,10 @@ img{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--light-bg-cl);
-}
+}*/
 
 
-/*Our team*/
+/*Our team
 .team{
     background-color: #F5F4FA;
     padding-top: 94px;
@@ -323,7 +325,7 @@ padding: 30px 10px;
     letter-spacing: 0.03em;
     color: var(--secondary-txt-cl);
     margin-bottom: 16px;
-}
+}*/
 
 /*Socials*/
 .soclinks {
@@ -356,7 +358,7 @@ padding: 30px 10px;
 }
 
 
-/*Our clients*/
+/*Our clients
 .clients{
     padding-top: 94px;
     padding-bottom: 94px;
@@ -389,7 +391,7 @@ padding: 30px 10px;
     justify-content: center;
     width: 106px;
     height: 60px;
-}
+}*/
 
 
 /*PORTFOLIO*/
@@ -495,7 +497,7 @@ padding: 30px 10px;
 
 
 
-/*Footer*/
+/*Footer
 .footer {
     background-color: var(--dark-bg-cl);
     padding-top: 60px;
@@ -542,7 +544,7 @@ padding: 30px 10px;
 .footer__link:hover,
 .footer__link:focus {
     color: var(--txt-color);
-}
+}*/
 /*Footer-socials*/
 .socials__header {
     font-weight: 700;
