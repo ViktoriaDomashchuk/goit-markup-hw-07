@@ -219,6 +219,7 @@
         border: 2px solid var(--accent-txt-cl);
     }
 }
+
 .modal__message:focus + .comment {
     transform: translate(-20px, -30px);
     color: var(--accent-txt-cl);
