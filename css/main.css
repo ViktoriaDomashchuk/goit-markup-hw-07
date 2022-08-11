@@ -4,7 +4,7 @@
   --secondary-txt-cl: #757575;
   --accent-txt-cl: #2196F3;
   --txt-color: #FFFFFF;
-  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --animation: 800ms cubic-bezier(0.4, 0, 0.2, 1);
   --main-txt-cl: #212121;
   /*background colors*/
   --dark-bg-cl: #2F303A;
@@ -276,7 +276,33 @@ img {
 }
 
 .modal__group {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+}
+
+.modal__link {
+  color: var(--accent-txt-cl);
+}
+
+.modal__button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 52px;
+}
+
+.modal__text {
+  font-size: 14px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-underline-position: under;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--secondary-txt-cl);
 }
 
 .modal__wrap {
@@ -296,6 +322,24 @@ img {
   line-height: 14px;
   letter-spacing: 1%;
 }
+.modal__input:focus + .modal__label {
+  -webkit-transform: translate(-30px, -30px);
+          transform: translate(-30px, -30px);
+  color: var(--accent-txt-cl);
+}
+.modal__input:not(:-moz-placeholder-shown) + .modal__label {
+  transform: translate(-30px, -30px);
+  color: var(--accent-txt-cl);
+}
+.modal__input:not(:-ms-input-placeholder) + .modal__label {
+  transform: translate(-30px, -30px);
+  color: var(--accent-txt-cl);
+}
+.modal__input:not(:placeholder-shown) + .modal__label {
+  -webkit-transform: translate(-30px, -30px);
+          transform: translate(-30px, -30px);
+  color: var(--accent-txt-cl);
+}
 
 .modal__input {
   width: 100%;
@@ -307,10 +351,13 @@ img {
   -webkit-transition: border-color var(--animation);
   transition: border-color var(--animation);
 }
+.modal__input:focus {
+  border-color: var(--accent-txt-cl);
+}
 
 .modal__message {
   padding: 12px 16px;
-  height: 120px;
+  height: 112px;
   resize: none;
   width: 100%;
   border-radius: 4px;
@@ -319,8 +366,10 @@ img {
   -webkit-transition: border-color var(--animation);
   transition: border-color var(--animation);
 }
+.modal__message:focus {
+  border-color: var(--accent-txt-cl);
+}
 
-/**/
 .textarea::-webkit-input-placeholder {
   font-style: normal;
   font-weight: 400;
@@ -329,6 +378,7 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+
 .textarea::-moz-placeholder {
   font-style: normal;
   font-weight: 400;
@@ -337,6 +387,7 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+
 .textarea:-ms-input-placeholder {
   font-style: normal;
   font-weight: 400;
@@ -345,6 +396,7 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+
 .textarea::-ms-input-placeholder {
   font-style: normal;
   font-weight: 400;
@@ -353,6 +405,7 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+
 .textarea::placeholder {
   font-style: normal;
   font-weight: 400;
@@ -368,6 +421,30 @@ img {
   left: 15px;
   -webkit-transition: fill var(--animation);
   transition: fill var(--animation);
+}
+.modal__input:focus ~ .modal__box {
+  fill: var(--accent-txt-cl);
+}
+.modal__input:not(:-moz-placeholder-shown) ~ .modal__box {
+  fill: var(--accent-txt-cl);
+}
+.modal__input:not(:-ms-input-placeholder) ~ .modal__box {
+  fill: var(--accent-txt-cl);
+}
+.modal__input:not(:placeholder-shown) ~ .modal__box {
+  fill: var(--accent-txt-cl);
+}
+.modal__input:not(:focus) ~ .modal__box {
+  fill: currentColor;
+}
+.modal__input:-moz-placeholder-shown + .modal__box {
+  border-color: var(--accent-txt-cl);
+}
+.modal__input:-ms-input-placeholder + .modal__box {
+  border-color: var(--accent-txt-cl);
+}
+.modal__input:placeholder-shown + .modal__box {
+  border-color: var(--accent-txt-cl);
 }
 
 .modal__agreement {
@@ -403,95 +480,11 @@ img {
   -webkit-transition: background-image var(--animation);
   transition: background-image var(--animation);
 }
-
-.modal__text {
-  font-size: 14px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  text-underline-position: under;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: var(--secondary-txt-cl);
-}
-
-.modal__link {
-  color: var(--accent-txt-cl);
-}
-
-.modal__button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 10px 52px;
-}
-
 .modal__check:checked:focus + .modal__checkbox {
   background-image: url(../images/icons/icon-check.svg);
 }
-
 .modal__check:focus + .modal__checkbox {
   border: 2px solid var(--accent-txt-cl);
-}
-
-.modal__input:focus,
-.modal__message:focus {
-  border-color: var(--accent-txt-cl);
-}
-
-.modal__input:focus + .modal__label {
-  -webkit-transform: translate(-30px, -30px);
-          transform: translate(-30px, -30px);
-  color: var(--accent-txt-cl);
-}
-
-.modal__input:not(:-moz-placeholder-shown) + .modal__label {
-  transform: translate(-30px, -30px);
-  color: var(--accent-txt-cl);
-}
-
-.modal__input:not(:-ms-input-placeholder) + .modal__label {
-  transform: translate(-30px, -30px);
-  color: var(--accent-txt-cl);
-}
-
-.modal__input:not(:placeholder-shown) + .modal__label {
-  -webkit-transform: translate(-30px, -30px);
-          transform: translate(-30px, -30px);
-  color: var(--accent-txt-cl);
-}
-
-.modal__input:not(:-moz-placeholder-shown) ~ .modal__box {
-  fill: var(--accent-txt-cl);
-}
-
-.modal__input:not(:-ms-input-placeholder) ~ .modal__box {
-  fill: var(--accent-txt-cl);
-}
-
-.modal__input:focus ~ .modal__box,
-.modal__input:not(:placeholder-shown) ~ .modal__box {
-  fill: var(--accent-txt-cl);
-}
-
-.modal__input:not(:focus) ~ .modal__box {
-  fill: currentColor;
-}
-
-.modal__input:-moz-placeholder-shown + .modal__box {
-  border-color: var(--accent-txt-cl);
-}
-
-.modal__input:-ms-input-placeholder + .modal__box {
-  border-color: var(--accent-txt-cl);
-}
-
-.modal__input:placeholder-shown + .modal__box {
-  border-color: var(--accent-txt-cl);
 }
 
 .modal__message:focus + .comment {
