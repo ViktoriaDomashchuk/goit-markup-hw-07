@@ -21,7 +21,7 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1) rotate(0);
     width: 528px;
-    min-height: 581px;
+    height: 581px;
     padding: 40px;
     background-color: #fff;
     border-radius: 4px;
@@ -84,11 +84,12 @@
     position: relative;
     display: block;
     margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 20px;
+    }
 }
 
-.modal__wrap:last-child {
-    margin-bottom: 20px;
-}
 
 .modal__label {
     display: block;
@@ -206,26 +207,25 @@
     color: var(--accent-txt-cl);
 }
 
-.modal__input:focus~.modal__checkbox,
-.modal__input:not(:placeholder-shown)~.modal__checkbox {
+.modal__input:focus~.modal__box,
+.modal__input:not(:placeholder-shown)~.modal__box {
     fill: var(--accent-txt-cl);
 }
-
 
 .modal__input:not(:focus)~.modal__box {
     fill: currentColor;
 }
 
-.modal__input:placeholder-shown+.modal__box {
+.modal__input:placeholder-shown +.modal__box {
     border-color: var(--accent-txt-cl);
 }
 
-.modal__message:focus+.comment {
+.modal__message:focus + .comment {
     transform: translate(-20px, -30px);
     color: var(--accent-txt-cl);
 }
 
-.modal__message:not(:placeholder-shown)+.comment {
+.modal__message:not(:placeholder-shown)+ .comment {
     transform: translate(-20px, -30px);
     color: var(--accent-txt-cl);
 }
