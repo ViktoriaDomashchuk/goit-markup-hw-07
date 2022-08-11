@@ -26,7 +26,7 @@
   overflow: hidden;
 }
 
-.clients, .team, .skill, .features {
+.clients, .team, .skill, .features, .header__container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -261,9 +261,273 @@ img {
 }
 
 /*Modal-form*/
+.modal__form {
+  text-align: center;
+}
+
+.modal__title {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700px;
+  line-height: 23px;
+  letter-spacing: 3%;
+}
+
+.modal__group {
+  margin-bottom: 25px;
+}
+
+.modal__wrap {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal__wrap:last-child {
+  margin-bottom: 20px;
+}
+
+.modal__label {
+  display: block;
+  text-align: left;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1%;
+}
+
+.modal__input {
+  width: 100%;
+  padding: 10px;
+  padding-left: 50px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: transparent;
+  -webkit-transition: border-color var(--animation);
+  transition: border-color var(--animation);
+}
+
+.modal__message {
+  padding: 12px 16px;
+  height: 120px;
+  resize: none;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: transparent;
+  -webkit-transition: border-color var(--animation);
+  transition: border-color var(--animation);
+}
+
+/**/
+.textarea::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.textarea::-moz-placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.textarea:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.textarea::-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.textarea::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal__box {
+  position: absolute;
+  bottom: 11px;
+  left: 15px;
+  -webkit-transition: fill var(--animation);
+  transition: fill var(--animation);
+}
+
+.modal__agreement {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+}
+
+.modal__check {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  margin: -1px;
+}
+
+.modal__checkbox {
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/icons/icon-border.svg);
+  background-size: contain;
+  background-origin: border-box;
+  margin-right: 8px;
+  -webkit-transition: background-image var(--animation);
+  transition: background-image var(--animation);
+}
+
+.modal__text {
+  font-size: 14px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-underline-position: under;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--secondary-txt-cl);
+}
+
+.modal__link {
+  color: var(--accent-txt-cl);
+}
+
+.modal__button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 52px;
+}
+
+.modal__check:checked:focus + .modal__checkbox {
+  background-image: url(../images/icons/icon-check.svg);
+}
+
+.modal__check:focus + .modal__checkbox {
+  border: 2px solid var(--accent-txt-cl);
+}
+
+.modal__input:focus,
+.modal__message:focus {
+  border-color: var(--accent-txt-cl);
+}
+
+.modal__input:focus + .modal__label {
+  -webkit-transform: translate(-30px, -30px);
+          transform: translate(-30px, -30px);
+  color: var(--accent-txt-cl);
+}
+
+.modal__input:not(:-moz-placeholder-shown) + .modal__label {
+  transform: translate(-30px, -30px);
+  color: var(--accent-txt-cl);
+}
+
+.modal__input:not(:-ms-input-placeholder) + .modal__label {
+  transform: translate(-30px, -30px);
+  color: var(--accent-txt-cl);
+}
+
+.modal__input:not(:placeholder-shown) + .modal__label {
+  -webkit-transform: translate(-30px, -30px);
+          transform: translate(-30px, -30px);
+  color: var(--accent-txt-cl);
+}
+
+.modal__input:not(:-moz-placeholder-shown) ~ .modal__checkbox {
+  fill: var(--accent-txt-cl);
+}
+
+.modal__input:not(:-ms-input-placeholder) ~ .modal__checkbox {
+  fill: var(--accent-txt-cl);
+}
+
+.modal__input:focus ~ .modal__checkbox,
+.modal__input:not(:placeholder-shown) ~ .modal__checkbox {
+  fill: var(--accent-txt-cl);
+}
+
+.modal__input:not(:focus) ~ .modal__box {
+  fill: currentColor;
+}
+
+.modal__input:-moz-placeholder-shown + .modal__box {
+  border-color: var(--accent-txt-cl);
+}
+
+.modal__input:-ms-input-placeholder + .modal__box {
+  border-color: var(--accent-txt-cl);
+}
+
+.modal__input:placeholder-shown + .modal__box {
+  border-color: var(--accent-txt-cl);
+}
+
+.modal__message:focus + .comment {
+  -webkit-transform: translate(-20px, -30px);
+          transform: translate(-20px, -30px);
+  color: var(--accent-txt-cl);
+}
+
+.modal__message:not(:-moz-placeholder-shown) + .comment {
+  transform: translate(-20px, -30px);
+  color: var(--accent-txt-cl);
+}
+
+.modal__message:not(:-ms-input-placeholder) + .comment {
+  transform: translate(-20px, -30px);
+  color: var(--accent-txt-cl);
+}
+
+.modal__message:not(:placeholder-shown) + .comment {
+  -webkit-transform: translate(-20px, -30px);
+          transform: translate(-20px, -30px);
+  color: var(--accent-txt-cl);
+}
+
 /*layout styles*/
 .header {
   background-color: var(--light-bg-cl);
+}
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .header__logo {
   margin-right: 93px;
@@ -276,15 +540,6 @@ img {
 
 .header__border {
   border-bottom: 1px solid #ECECEC;
-}
-
-.header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .nav {

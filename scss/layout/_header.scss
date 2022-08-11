@@ -1,6 +1,13 @@
 .header {
     background-color: var(--light-bg-cl);
 
+    &__container {
+        @extend %container;
+            display: flex;
+            align-items: center;
+        }
+    
+
     &__logo {
         margin-right: 93px;
         font-size: 26px;
@@ -12,10 +19,8 @@
 }
 .header__border {
     border-bottom: 1px solid #ECECEC;
+    
 }
-.header__container {
-    display: flex;
-    align-items: center;
-}
+
 
 
