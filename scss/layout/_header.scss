@@ -1,17 +1,6 @@
 .header {
-    @extend %container;
-    
     background-color: var(--light-bg-cl);
 
-    &__border {
-        border-bottom: 1px solid #ECECEC;
-    }
-    
-    &__container {
-        display: flex;
-        align-items: center;
-    }
-    
     &__logo {
         margin-right: 93px;
         font-size: 26px;
@@ -21,3 +10,12 @@
         color: #000000;
     }
 }
+.header__border {
+    border-bottom: 1px solid #ECECEC;
+}
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+
