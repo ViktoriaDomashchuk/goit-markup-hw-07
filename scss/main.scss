@@ -11,6 +11,9 @@
 @import './components/button';
 @import'./components/title';
 @import'./components/logotype';
+@import'./components/soclinks';
+@import'./components/footer-soclinks';
+@import'./components/modal';
 
 /*layout styles*/
 @import './layout/header';
@@ -22,3 +25,5 @@
 @import './layout/clients';
 @import './layout/footer';
 @import './layout/filters';
+@import './layout/projects';
+@import './layout/foot-form';
