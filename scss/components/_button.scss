@@ -1,16 +1,16 @@
 .btn {
     width: 200px;
     height: 50px;
-    font-family: Roboto;
+    font-family: $font-style-roboto;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.06em;
-    color: var(--txt-color);
+    color: $txt-color ;
     border-radius: 4px;
-    background-color: var(--accent-txt-cl);
+    background-color: $accent-txt-cl;
     border: none;
     cursor: pointer;
-    transition: background-color var(--animation), box-shadow var(--animation);
+    transition: background-color $animation, box-shadow $animation;
     
     &:hover,
     &:focus {

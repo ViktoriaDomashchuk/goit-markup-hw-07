@@ -1,5 +1,5 @@
 .footer {
-    background-color: var(--dark-bg-cl);
+    background-color: $dark-bg-cl;
     &__container {
         display: flex;
         align-items: baseline;
@@ -21,7 +21,7 @@
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19em;
-        color: var(--txt-color);
+        color: $txt-color;
         font-family: 'Raleway';
     }
 
@@ -38,7 +38,7 @@
         font-size: 14px;
         line-height: 1.71em;
         letter-spacing: 0.03em;
-        color: var(--txt-color);
+        color: $txt-color;
         font-style: normal;
     }
 }
@@ -50,10 +50,10 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
-    transition: color var(--animation);
+    transition: color $animation;
 
     &:hover,
     &:focus {
-        color: var(--txt-color);
+        color: $txt-color;
     }
 }

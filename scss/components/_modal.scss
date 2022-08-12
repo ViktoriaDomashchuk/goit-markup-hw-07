@@ -7,7 +7,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.25);
-    transition: opacity var(--animation), visibility var(--animation);
+    transition: opacity $animation, visibility $animation;
 
     &.is-hidden {
         opacity: 0;
@@ -54,11 +54,11 @@
     width: 18px;
     height: 18px;
     fill: currentColor;
-    transition: fill var(--animation);
+    transition: fill $animation;
 
     .modal__btn:hover &,
     .modal__btn:focus & {
-        fill: var(--accent-txt-cl);
+        fill: $accent-txt-cl;
     }
 }
 
@@ -82,7 +82,7 @@
     margin-bottom: 20px;
 }
 .modal__link {
-    color: var(--accent-txt-cl);
+    color: $accent-txt-cl;
 }
 
 .modal__button {
@@ -96,7 +96,7 @@
     text-underline-position: under;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: var(--secondary-txt-cl);
+    color: $secondary-txt-cl;
 }
 .modal__wrap {
     position: relative;
@@ -119,12 +119,12 @@
     
     .modal__input:focus + & {
         transform: translate(-30px, -30px);
-        color: var(--accent-txt-cl);
+        color: $accent-txt-cl;
     }
     
     .modal__input:not(:placeholder-shown) + &{
         transform: translate(-30px, -30px);
-        color: var(--accent-txt-cl);
+        color: $accent-txt-cl;
     }
 }
 
@@ -135,9 +135,9 @@
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     outline: transparent;
-    transition: border-color var(--animation);
+    transition: border-color $animation;
     &:focus{
-        border-color: var(--accent-txt-cl);
+        border-color: $accent-txt-cl;
     }
 }
 
@@ -149,10 +149,10 @@
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     outline: transparent;
-    transition: border-color var(--animation);
+    transition: border-color $animation;
 
     &:focus{
-    border-color: var(--accent-txt-cl);
+    border-color: $accent-txt-cl;
     }
 }
 .textarea::placeholder {
@@ -168,14 +168,14 @@
     position: absolute;
     bottom: 11px;
     left: 15px;
-    transition: fill var(--animation);
+    transition: fill $animation;
 
     .modal__input:focus~& {
-        fill: var(--accent-txt-cl);
+        fill: $accent-txt-cl;
     }
     
     .modal__input:not(:placeholder-shown)~& {
-        fill: var(--accent-txt-cl);
+        fill: $accent-txt-cl;
     }
     
     .modal__input:not(:focus)~& {
@@ -183,7 +183,7 @@
     }
     
     .modal__input:placeholder-shown+& {
-        border-color: var(--accent-txt-cl);
+        border-color: $accent-txt-cl;
     }
 }
 
@@ -211,23 +211,23 @@
     background-size: contain;
     background-origin: border-box;
     margin-right: 8px;
-    transition: background-image var(--animation);
+    transition: background-image $animation;
 
     .modal__check:checked:focus+& {
         background-image: url(../images/icons/icon-check.svg);
     }
 
     .modal__check:focus + & {
-        border: 2px solid var(--accent-txt-cl);
+        border: 2px solid $accent-txt-cl;
     }
 }
 
 .modal__message:focus + .comment {
     transform: translate(-20px, -30px);
-    color: var(--accent-txt-cl);
+    color: $accent-txt-cl;
 }
 
 .modal__message:not(:placeholder-shown) + .comment {
     transform: translate(-20px, -30px);
-    color: var(--accent-txt-cl);
+    color: $accent-txt-cl;
 }

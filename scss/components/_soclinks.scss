@@ -11,23 +11,23 @@
     justify-content: center;
     width: 44px;
     height: 44px;
-    background-color: var(--light-bg-cl);
+    background-color: $light-bg-cl;
     border-radius: 50%;
-    transition: background-color var(--animation);
+    transition: background-color $animation;
 
     &:hover,
     &:focus {
-        background-color: var(--accent-txt-cl);
+        background-color: $accent-txt-cl;
     }
 }
 
 
 .soclinks__icons {
     fill: #AFB1B8;
-    transition: fill var(--animation);
+    transition: fill $animation;
 
     .soclinks__link:hover &,
     .soclinks__link:focus & {
-        fill: var(--light-bg-cl);
+        fill: $light-bg-cl;
     }
 }

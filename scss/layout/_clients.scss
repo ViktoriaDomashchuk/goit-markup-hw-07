@@ -17,8 +17,8 @@
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    background-color: var(--light-bg-cl);
-    transition: fill var(--animation), border-color var(--animation);
+    background-color: $light-bg-cl;
+    transition: fill $animation, border-color $animation;
     display: inline-flex;
     flex-wrap: wrap;
     align-items: center;

@@ -13,19 +13,19 @@
     font-weight: 500;
     line-height: 1.33em;
     letter-spacing: 0.02em;
-    color: var(--main-txt-cl);
-    transition: color var(--animation);
+    color: $main-txt-cl;
+    transition: color $animation;
     display: block;
     padding: 32px 0;
     font-size: 14px;
 
     &:hover,
     &:focus {
-        color: var(--accent-txt-cl);
+        color: $accent-txt-cl;
     }
     
     &--current {
-        color: var(--accent-txt-cl);
+        color: $accent-txt-cl;
         position: relative;
     }
     
@@ -38,7 +38,7 @@
         width: 100%;
         height: 4px;
         border-radius: 4px;
-        background-color: var(--accent-txt-cl);
+        background-color: $accent-txt-cl;
     
     }
 }
@@ -58,17 +58,17 @@
     font-weight: 500;
     line-height: 1.33em;
     letter-spacing: 0.02em;
-    color: var(--secondary-txt-cl);
+    color: $secondary-txt-cl;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: color var(--animation);
+    transition: color $animation;
     font-size: 14px;
 
    
     &:hover,
     &:focus {
-        color: var(--accent-txt-cl);
+        color: $accent-txt-cl;
     }
 }
 .nav__icon {

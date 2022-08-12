@@ -7,7 +7,7 @@
         font-weight: 700;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: var(--light-bg-cl);
+        color: $light-bg-cl;
         font-size: 14px;
         line-height: 16px;
     }
@@ -24,7 +24,7 @@
         border-radius: 4px;
         padding: 15px 16px;
         background-color: transparent;
-        color: var(--txt-color);
+        color: $txt-color;
         box-shadow: 0px, 4px rgba(0, 0, 0, 0.15);
         border: 1px solid rgba(255, 255, 255, 0.3);
     }
@@ -41,6 +41,6 @@
         margin-left: 10px;
         width: 24px;
         height: 24px;
-        fill: var(--light-bg-cl);
+        fill: $light-bg-cl;
     }
 }
