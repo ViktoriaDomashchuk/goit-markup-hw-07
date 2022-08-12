@@ -1,11 +1,11 @@
 .clients {
-    @extend %container;
-    
     padding-top: 94px;
     padding-bottom: 94px;
 
     &__list {
         display: flex;
+        align-items: center;
+        justify-content: center;
         gap: 30px;
     }
 }

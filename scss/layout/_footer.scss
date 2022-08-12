@@ -1,15 +1,14 @@
 .footer {
+    background-color: var(--dark-bg-cl);
     &__container {
         display: flex;
         align-items: baseline;
-        background-color: var(--dark-bg-cl);
         padding: 60px 215px;
         /*padding-top: 60px;
         padding-bottom: 60px;*/
-        width: 1600px;
         height: 252px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 215px;
+        margin-right: 215px;
     }
 
     &__contacts {

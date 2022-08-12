@@ -26,7 +26,7 @@
   overflow: hidden;
 }
 
-.clients, .team, .skill, .features, .header__container {
+.header__container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -731,7 +731,14 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 0 auto;
   gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .skill__item {
   position: relative;
@@ -761,7 +768,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1600px;
 }
 .team__list {
   display: -webkit-box;
@@ -811,6 +817,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 30px;
 }
 
@@ -854,6 +866,9 @@ img {
   height: 60px;
 }
 
+.footer {
+  background-color: var(--dark-bg-cl);
+}
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -861,14 +876,12 @@ img {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  background-color: var(--dark-bg-cl);
   padding: 60px 215px;
   /*padding-top: 60px;
   padding-bottom: 60px;*/
-  width: 1600px;
   height: 252px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 215px;
+  margin-right: 215px;
 }
 .footer__contacts {
   margin-right: 50px;
